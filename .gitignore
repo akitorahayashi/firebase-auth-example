@@ -1,0 +1,42 @@
+# Xcode
+DerivedData/
+build/
+
+# iOSデバイス固有のファイル
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Firebase設定ファイル
+GoogleService-Info.plist
+
+# Firebase CLI
+.firebase/
+firebase-debug.log
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# その他
+.idea/
+*.moved-aside
+*.swp
+*.lock
+*.bak
+*.tmp
+*.orig
