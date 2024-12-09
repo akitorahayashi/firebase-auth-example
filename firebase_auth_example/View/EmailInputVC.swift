@@ -96,7 +96,7 @@ class EmailInputVC: UIViewController {
                 self?.hideLoading() // 操作を有効化し、ローディング表示を終了
                 switch result {
                 case .success:
-                    self?.showAlert(title: "成功", message: (authMode == .login) ? "ログインしました！" : "登録しました！")
+                    self?.showAlert(title: "成功", message: (authMode == .login) ? "ログインしました！" : "確認メールのURLから認証を完了してください")
                 case .failure(let error):
                     if error == .emailNotVerified {
                         self?.authService.showResendVerificationAlert(on: self!, email: email)
